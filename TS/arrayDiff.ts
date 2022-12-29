@@ -23,3 +23,6 @@ export const arrayDiff = (a: number[], b: number[]): number[] => {
   }
   return a;
 };
+
+export const arrayDiff2 = (a: number[], b: number[]): number[] =>
+  a.filter((x) => !b.includes(x));

@@ -1,7 +1,7 @@
 "use strict";
 // Your goal in this kata is to implement a difference function, which subtracts one list from another and returns the result.
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.arrayDiff = void 0;
+exports.arrayDiff2 = exports.arrayDiff = void 0;
 // It should remove all values from list a, which are present in list b keeping their order.
 // array_diff({1, 2}, 2, {1}, 1, *z) == {2} (z == 1)
 // If a value is present in b, all of its occurrences must be removed from the other:
@@ -22,3 +22,5 @@ const arrayDiff = (a, b) => {
     return a;
 };
 exports.arrayDiff = arrayDiff;
+const arrayDiff2 = (a, b) => a.filter((x) => !b.includes(x));
+exports.arrayDiff2 = arrayDiff2;
